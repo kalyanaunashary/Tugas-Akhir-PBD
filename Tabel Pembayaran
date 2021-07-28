@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sipenjualan;
+
+import javax.swing.table.TableModel;
+
+/**
+ *
+ * @author kalya
+ */
+public class TabelPembayaran {
+    private String idPembayaran;
+    private double total;
+
+    public TabelPembayaran(String idPembayaran, double total) {
+        this.idPembayaran = idPembayaran;
+        this.total = total;
+    }
+
+    @Override
+    public String toString() {
+        return this.idPembayaran;
+    }
+
+    public String getIdPembayaran() {
+        return idPembayaran;
+    }
+    
+    public void setIdPembayaran(String idPembayaran) {
+        this.idPembayaran = idPembayaran;
+    }
+
+    public double getTotal() {
+        return total;
+    }   
+
+    TableModel getTabel() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    Object countSubtotal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
