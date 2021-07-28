@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sipenjualan;
+
+/**
+ *
+ * @author kalya
+ */
+public class TabelSupplier {
+    private String idSupplier;
+    private String namaSupplier;
+
+    public TabelSupplier(String idSupplier, String namaSupplier) {
+        this.idSupplier = idSupplier;
+        this.namaSupplier = namaSupplier;
+    }
+
+    @Override
+    public String toString() {
+        return this.idSupplier;
+    }
+
+    public String getIdSupplier() {
+        return idSupplier;
+    }
+    
+    public void setIdSupplier(String idSupplier) {
+        this.idSupplier = idSupplier;
+    }
+
+    public String getNamaSupplier() {
+        return namaSupplier;
+    }
+
+    public void setNamaSupplier(String namaSupplier) {
+        this.namaSupplier = namaSupplier;
+    }
+}
