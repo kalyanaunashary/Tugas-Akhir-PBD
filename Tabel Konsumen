@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sipenjualan;
+
+/**
+ *
+ * @author kalya
+ */
+public class TabelKonsumen {
+    private String idKonsumen;
+    private String namaKonsumen;
+    private double noHp;
+    private String alamat;
+    private String email;
+
+    public TabelKonsumen(String idKonsumen, String namaKonsumen, double noHp, String alamat, String email) {
+        this.idKonsumen = idKonsumen;
+        this.namaKonsumen = namaKonsumen;
+        this.noHp = noHp;
+        this.alamat = alamat;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return this.idKonsumen;
+    }
+
+    public String getIdKonsumen() {
+        return idKonsumen;
+    }
+    
+    public void setIdKonsumen(String idKonsumen) {
+        this.idKonsumen = idKonsumen;
+    }
+
+    public String getNamaKonsumen() {
+        return namaKonsumen;
+    }
+
+    public void setNamaKonsumen(String namaKonsumen) {
+        this.namaKonsumen = namaKonsumen;
+    }
+
+    public double getNoHp() {
+        return noHp;
+    }
+    
+    public String getAlamat() {
+        return alamat;
+    }
+    
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
