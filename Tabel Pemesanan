@@ -1,0 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sipenjualan;
+
+import javax.swing.table.DefaultTableModel;
+
+
+/**
+ *
+ * @author kalya
+ */
+public class TabelPemesanan {
+    private String idPemesanan;
+    private String idProduk;
+    private String idKonsumen;
+    private String namaProduk;
+    private double tglPemesanan;
+    private DefaultTableModel tabel = new DefaultTableModel();
+    
+    public TabelPemesanan(){
+        getTabel().addColumn("Barang");
+        getTabel().addColumn("Harga");
+        getTabel().addColumn("Qty");
+        getTabel().addColumn("Satuan");
+        getTabel().addColumn("Jumlah");
+    }
+
+    public String getIdPemesanan() {
+        return idPemesanan;
+    }
+    
+    public void setIdPemesanan(String idPemesanan) {
+        this.idPemesanan = idPemesanan;
+    }
+
+    public String getIdProduk() {
+        return idProduk;
+    }
+    
+    public void setIdProduk(String idProduk) {
+        this.idProduk = idProduk;
+    }
+
+    public String getIdKonsumen() {
+        return idKonsumen;
+    }
+    
+    public void setIdKonsumen(String idKonsumen) {
+        this.idKonsumen = idKonsumen;
+    }
+    
+    public String getNamaProduk() {
+        return namaProduk;
+    }
+
+    public void setNamaProduk(String namaProduk) {
+        this.namaProduk = namaProduk;
+    }
+
+    public double getTglPemesanan() {
+        return tglPemesanan;
+    }
+
+    public void setTglPemesanan(double tglPemesanan) {
+        this.tglPemesanan = tglPemesanan;
+    }
+    
+    public DefaultTableModel getTabel() {
+        return tabel;
+}
+}
